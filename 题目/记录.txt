@@ -1,0 +1,48 @@
+；的使用：
+return 0;
+case 1:break;
+case 2:{};
+
+
+char字符--->使用单引号''
+char c='p';
+c == 'p';
+
+
+switch结构：
+switch(x){
+	case 1: printf("case1");break;
+	case 2:{
+		printf("case2");
+		break;
+	};
+	case 4 ... 6: printf("In 4-6");break;
+	default: printf("default case");break;
+};
+
+
+for循环：从 i=0 开始，循环n次到 i = n-1
+for(int i=0;i<n;i++){
+	printf("%d",i);
+}
+
+
+指针：
+*p---取出p的值 and 可以修改该地址的值
+int a=1;
+int *p = &a;
+*p =10;
+printf("%d",a);
+
+&a--读取a的地址
+
+p=地址：改变p指向地址
+int a,b;
+int *ap=&a,*bp=&b;
+ap = &b;
+bp = &a;
+
+
+运算符：
+不能直接使用 a>b>c格式
+对于浮点数的判断相等需：a-b < 1e-10
